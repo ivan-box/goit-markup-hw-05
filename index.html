@@ -50,14 +50,30 @@
     </div>
   </header>
   <main>
+
     <!-- hero -->
+
     <section class="hero section">
-      <div class="container">
+      <div class="hero-container container">
         <h1 class="hero-title">
           Effective solutions <br />
           for your business
         </h1>
-        <button class="hero-button" type="button">Order service</button>
+        <button class="hero-button" type="button" data-modal-open>Order service</button>
+
+        <!-- <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <div class=""></div>
+            <button class="hero-button-close" data-modal-close>
+              <svg class="button-close-icon" width="30px" height="30px">
+                <use href="./image/icons.svg#close">
+                </use>
+              </svg></button>
+          </div>
+        </div> -->
+
+      </div>
+
     </section>
     <!-- our advantages -->
     <section class="section advantages">
@@ -126,9 +142,18 @@
         <h2 class="section-title">What are we doing</h2>
         <div>
           <ul class="list wrapper">
-            <li class="study"><img src="./image/make/box1.jpg" alt="workplace" /></li>
-            <li class="study"><img src="./image/make/box2.jpg" alt="user authorization" /></li>
-            <li class="study"><img src="./image/make/box3.jpg" alt="finished product" /></li>
+            <li class="study">
+              <img class="trade-image" src="./image/make/box1.jpg" alt="workplace" />
+              <h3 class="trade-list">Desktop Applications</h3>
+            </li>
+            <li class="study">
+              <img class="trade-image" src="./image/make/box2.jpg" alt="user authorization" />
+              <h3 class="trade-list">Mobile Applications</h3>
+            </li>
+            <li class="study">
+              <img class="trade-image" src="./image/make/box3.jpg" alt="finished product" />
+              <h3 class="trade-list">Design solutions</h3>
+            </li>
           </ul>
         </div>
       </div>
@@ -391,6 +416,7 @@
           </div>
         </div>
   </footer>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
